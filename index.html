@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <title>Forca</title>
+</head>
+<body>
+    <header>
+        <img src="images/icon.png" alt="Icone Alura">
+    </header>
+
+    <main>
+            <section class="menu-principal">
+                <button id="botao-iniciar">Começar a Jogar</button>
+                <button class="botao-negativo">Adicionar nova Palavra</button>
+            </section>
+            <section class="jogo invisivel">
+                <canvas id="forca" height="360px" width="294px"></canvas>
+                <ul class="palavra-sorteada">
+                    <li>
+                        <p></p>
+                        <div></div>
+                    </li>
+                </ul>
+                <section class="botoes">
+                    <button>Novo Jogo</button><button class="botao-negativo">Desistir</button>
+                </section>
+            </section>
+            <section class="adicionar-palavra invisivel">
+                <input type="text" name="nova-palavra" id="nova-palavra" placeholder="Digite uma palavra ou frase">
+                <aside>
+                    <img src="images/Aviso.png" alt="Importante!"><p>Máximo de 8 letras</p>
+                </aside>
+                <section class="botoes">
+                    <button>Salvar e Começar</button><button class="botao-negativo">Cancelar</button>
+                </section>
+            </section>
+        </main>
+        
+        <footer>
+            <img src="images/icon.png" alt="Icone-branco"><p>Jogo Alura da Forca - Site criado por Filipe Fernandes, 2022</p>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
