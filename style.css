@@ -4,6 +4,7 @@
     --escrita-clara: #fff;
     --light: #E5E5E5;
     --blue: #0A3871;
+    --apagado: #495057;
 }
 
 body{
@@ -50,8 +51,8 @@ main{
 
 button{
     display: inline-block;
-    width: 317px;
-    height: 105px;
+    width: 332px;
+    height: 67px;
 
     background: var(--blue);
     border-radius: 24px;
@@ -59,6 +60,105 @@ button{
     font-size: 1.3em;
 
     color: var(--escrita-clara);
+}
+
+.menu-principal button{
+    width: 317px;
+    height: 105px;
+}
+
+.botao-negativo{
+    border: 2px solid var(--blue);
+    background: var(--light);
+    color: var(--blue);
+}
+
+.jogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jogo canvas{
+    align-self: center;
+    background: var(--blue);
+    height: 300px;
+    width: 294px;
+}
+
+.palavra-sorteada{
+    margin: 5vh 0;
+}
+
+.palavra-sorteada li{
+    display: inline-block;
+    margin: 0 8px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.palavra-sorteada p{
+    height: 1em;
+
+    font-size: 2em;
+    color: var(--blue);
+}
+
+.palavra-sorteada div{
+    width: 80px;
+    height: 4px;
+
+    background: var(--blue);
+}
+
+#letras-erradas p{
+    display: inline-block;
+    font-size: 1.3em;
+
+    color: var(--apagado);
+
+    margin: 0 8px 1em;
+}
+
+.botoes button{
+    margin: 0 1.2em;
+}
+
+.adicionar-palavra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adicionar-palavra input{
+    border:none;
+    background: var(--light);
+
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--blue);
+
+    margin: 20vh 0;
+
+}
+
+.adicionar-palavra aside{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.adicionar-palavra img{
+}
+
+.adicionar-palavra p{
+    color: var(--apagado);
+    font-size: 0.8em;
+
+    display: inline-block;
+    margin-left: 0.5em;
 }
 
 .invisivel{
@@ -71,7 +171,7 @@ footer{
     flex-direction: row;
     gap: 10px;
 
-    padding: 1em;
+    padding: 0.7em;
     justify-content: center;
     align-items: center;
 
@@ -84,9 +184,10 @@ footer{
 }
 
 footer img{
-    height: 2em;
+    height: 1.3em;
 }
 
 footer p{
+    font-size: 0.8em;
     color: var(--light);
 }

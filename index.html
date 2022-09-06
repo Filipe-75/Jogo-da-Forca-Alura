@@ -20,15 +20,48 @@
                 <button class="botao-negativo">Adicionar nova Palavra</button>
             </section>
             <section class="jogo invisivel">
-                <canvas id="forca" height="360px" width="294px"></canvas>
+                <canvas id="forca"></canvas>
                 <ul class="palavra-sorteada">
+                    <li>
+                        <p>A</p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p> </p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p> </p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p>L</p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p> </p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p> </p>
+                        <div></div>
+                    </li>
+                    <li>
+                        <p></p>
+                        <div></div>
+                    </li>
                     <li>
                         <p></p>
                         <div></div>
                     </li>
                 </ul>
+                <aside id="letras-erradas">
+                    <p>K</p>
+                    <p>D</p>
+                    <p>E</p>
+                </aside>
                 <section class="botoes">
-                    <button>Novo Jogo</button><button class="botao-negativo">Desistir</button>
+                    <button id="reiniciar">Novo Jogo</button><button class="botao-negativo">Desistir</button>
                 </section>
             </section>
             <section class="adicionar-palavra invisivel">
@@ -37,7 +70,7 @@
                     <img src="images/Aviso.png" alt="Importante!"><p>Máximo de 8 letras</p>
                 </aside>
                 <section class="botoes">
-                    <button>Salvar e Começar</button><button class="botao-negativo">Cancelar</button>
+                    <button id="salvar">Salvar e Começar</button><button class="botao-negativo">Cancelar</button>
                 </section>
             </section>
         </main>
