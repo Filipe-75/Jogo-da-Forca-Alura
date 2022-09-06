@@ -150,9 +150,6 @@ button{
     margin: 1em 0;
 }
 
-.adicionar-palavra img{
-}
-
 .adicionar-palavra p{
     color: var(--apagado);
     font-size: 0.8em;
